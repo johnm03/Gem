@@ -4,10 +4,6 @@
 
 import Foundation
 
-struct Temp {
-    
-}
-
 /// Interactor, responsible for making the API to fetch Fruit list.
 class ListInteractor: Interactor {
     
@@ -31,7 +27,7 @@ class ListInteractor: Interactor {
     ///
     /// - Parameters:
     ///   - completion: Completion block, called on request completion.
-    func fetchData(completion: @escaping (Result<[Temp]>) -> Void) {
+    func fetchData(completion: @escaping (Result<ListNetworkService.ResultType>) -> Void) {
         
         guard task == nil || task?.isRunning == false else {
             return

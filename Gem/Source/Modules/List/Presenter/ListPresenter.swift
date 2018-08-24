@@ -18,7 +18,7 @@ class ListPresenter: Presenter {
         self.interactor = interactor
     }
     
-    var listViewModels: [ListViewModel] = []
+    var listViewModels: [ChangeRequestViewModel.JobViewModel] = []
 
     /// Call this method to load any required data.
     func loadIfRequired() {
@@ -32,9 +32,25 @@ class ListPresenter: Presenter {
             }
             
             switch result {
-            case .success(let temps):
-                strongSelf.listViewModels = temps.map { _ in
-                    return ListViewModel()
+            case .success(let changeRequest):
+                strongSelf.listViewModels = changeRequest.jobs.map { job in
+                    
+                    let status: ChangeRequestViewModel.JobStatus
+                    
+                    switch job.status {
+                    case .failed:
+                        status = .failed
+                    case .passed:
+                        status = .passed
+                    case .aborted:
+                        status = .aborted
+                    case .running:
+                        status = .running
+                    case .unknown:
+                        status = .unknown
+                    }
+                    
+                    return ChangeRequestViewModel.JobViewModel(name: job.name, status: status)
                 }
                 strongSelf.presenterDidUpdateContent(strongSelf.viewController)
             case .failure(let error):

@@ -13,7 +13,8 @@ struct NavigationCoordinatorFactory {
     func makeNavigationCoordinator(from type: Menu.ItemType, destination: UIViewController) -> Coordinatable? {
         switch (type, destination) {
         case (.prs, let listViewController as ListViewController):
-            return ListNavigationCoordinator(destination: listViewController)
+            return ListNavigationCoordinator(destination: listViewController,
+                                             networkRequest: ListNetworkService().fetch(withSession: .shared))
         default:
             return nil
         }

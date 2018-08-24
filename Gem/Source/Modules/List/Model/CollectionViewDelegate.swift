@@ -46,7 +46,7 @@ class CollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollectionVi
         
         let itemsPerRow = device.orientation.isLandscape ? minNumberOfItemsPerRowLandscape : minNumberOfItemsPerRowPortrait
         
-        let maxItemWidth = availableContentWidth/itemsPerRow
+        let maxItemWidth = collectionView.frame.width
         let maxItemHeight = (maxItemWidth * 0.3)
         return CGSize(width: maxItemWidth, height: maxItemHeight)
         
@@ -63,10 +63,19 @@ class CollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollectionVi
         
         return
         
-//        viewController.pushViewControllerToNavigationController(navigationController)(detailedViewerViewController, true)
         
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        let itemCell = cell as? ItemCell
+        
+        let viewModel = viewController.presenter.listViewModels[indexPath.row]
+
+        if viewModel.isJobRunning {
+            itemCell?.startAnimation()
+        }
+        
+    }
     
 }

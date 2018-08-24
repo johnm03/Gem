@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E166535D212F227800EEA502 /* GemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166535C212F227800EEA502 /* GemTests.swift */; };
-		E16653E7212F22EC00EEA502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1665368212F22EC00EEA502 /* Assets.xcassets */; };
 		E16653E8212F22EC00EEA502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1665369212F22EC00EEA502 /* LaunchScreen.storyboard */; };
 		E16653EA212F22EC00EEA502 /* UIView+Initialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665372212F22EC00EEA502 /* UIView+Initialize.swift */; };
 		E16653EB212F22EC00EEA502 /* UIStoryboard+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665374212F22EC00EEA502 /* UIStoryboard+Instantiate.swift */; };
@@ -16,7 +15,6 @@
 		E16653ED212F22EC00EEA502 /* UICollectionReusableView+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665378212F22EC00EEA502 /* UICollectionReusableView+ReuseIdentifier.swift */; };
 		E16653EF212F22EC00EEA502 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166537B212F22EC00EEA502 /* NetworkServiceError.swift */; };
 		E16653F0212F22EC00EEA502 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166537C212F22EC00EEA502 /* Result.swift */; };
-		E16653F1212F22EC00EEA502 /* UsageStatsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166537D212F22EC00EEA502 /* UsageStatsNetworkService.swift */; };
 		E16653F2212F22EC00EEA502 /* HTTPURLResponse+ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665380212F22EC00EEA502 /* HTTPURLResponse+ResponseType.swift */; };
 		E16653F3212F22EC00EEA502 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1665382212F22EC00EEA502 /* LoadingView.xib */; };
 		E16653F4212F22EC00EEA502 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1665383212F22EC00EEA502 /* ErrorView.xib */; };
@@ -54,9 +52,12 @@
 		E1665425212F22EC00EEA502 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16653D8212F22EC00EEA502 /* Menu.swift */; };
 		E1DD4AF5212F2B840065FF24 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DD4AF4212F2B840065FF24 /* ItemCell.xib */; };
 		E1DD4AF7212F2B910065FF24 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AF6212F2B910065FF24 /* ItemCell.swift */; };
-		E1DD4AFA212F31D20065FF24 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AF9212F31D20065FF24 /* ListViewModel.swift */; };
 		E1DD4AFC212F35CA0065FF24 /* ListDataNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AFB212F35CA0065FF24 /* ListDataNetworkService.swift */; };
 		E1DD4AFE212FE8890065FF24 /* NavigationCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AFD212FE8890065FF24 /* NavigationCoordinatorFactory.swift */; };
+		E1DD4B4C213008140065FF24 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4B4B213008140065FF24 /* NetworkService.swift */; };
+		E1DD4B4F21300E410065FF24 /* ChangeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4B4E21300E410065FF24 /* ChangeRequest.swift */; };
+		E1DD4B51213016180065FF24 /* ChangeRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4B50213016180065FF24 /* ChangeRequestViewModel.swift */; };
+		E1DD4B53213033B70065FF24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DD4B52213033B70065FF24 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +75,6 @@
 		E1665358212F227800EEA502 /* GemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E166535C212F227800EEA502 /* GemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemTests.swift; sourceTree = "<group>"; };
 		E166535E212F227800EEA502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1665368212F22EC00EEA502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E166536A212F22EC00EEA502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1665372212F22EC00EEA502 /* UIView+Initialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Initialize.swift"; sourceTree = "<group>"; };
 		E1665374212F22EC00EEA502 /* UIStoryboard+Instantiate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Instantiate.swift"; sourceTree = "<group>"; };
@@ -82,7 +82,6 @@
 		E1665378212F22EC00EEA502 /* UICollectionReusableView+ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		E166537B212F22EC00EEA502 /* NetworkServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
 		E166537C212F22EC00EEA502 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		E166537D212F22EC00EEA502 /* UsageStatsNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsageStatsNetworkService.swift; sourceTree = "<group>"; };
 		E1665380212F22EC00EEA502 /* HTTPURLResponse+ResponseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+ResponseType.swift"; sourceTree = "<group>"; };
 		E1665382212F22EC00EEA502 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		E1665383212F22EC00EEA502 /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
@@ -121,9 +120,12 @@
 		E16653E6212F22EC00EEA502 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1DD4AF4212F2B840065FF24 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		E1DD4AF6212F2B910065FF24 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
-		E1DD4AF9212F31D20065FF24 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		E1DD4AFB212F35CA0065FF24 /* ListDataNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataNetworkService.swift; sourceTree = "<group>"; };
 		E1DD4AFD212FE8890065FF24 /* NavigationCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinatorFactory.swift; sourceTree = "<group>"; };
+		E1DD4B4B213008140065FF24 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E1DD4B4E21300E410065FF24 /* ChangeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRequest.swift; sourceTree = "<group>"; };
+		E1DD4B50213016180065FF24 /* ChangeRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRequestViewModel.swift; sourceTree = "<group>"; };
+		E1DD4B52213033B70065FF24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +186,7 @@
 		E1665367212F22EC00EEA502 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E1665368212F22EC00EEA502 /* Assets.xcassets */,
+				E1DD4B52213033B70065FF24 /* Assets.xcassets */,
 				E1665369212F22EC00EEA502 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -203,6 +205,7 @@
 		E166536E212F22EC00EEA502 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E1DD4B4D21300E2A0065FF24 /* Entities */,
 				E166536F212F22EC00EEA502 /* UsageStats */,
 				E1665370212F22EC00EEA502 /* UIKit */,
 				E1665379212F22EC00EEA502 /* Networking */,
@@ -272,7 +275,6 @@
 			children = (
 				E166537B212F22EC00EEA502 /* NetworkServiceError.swift */,
 				E166537C212F22EC00EEA502 /* Result.swift */,
-				E166537D212F22EC00EEA502 /* UsageStatsNetworkService.swift */,
 				E1DD4AFB212F35CA0065FF24 /* ListDataNetworkService.swift */,
 			);
 			path = Networking;
@@ -341,6 +343,7 @@
 				E1665392212F22EC00EEA502 /* CanShowStatusView.swift */,
 				E1665393212F22EC00EEA502 /* CanInteractWithPresenter.swift */,
 				E1665394212F22EC00EEA502 /* Task.swift */,
+				E1DD4B4B213008140065FF24 /* NetworkService.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -511,7 +514,15 @@
 		E1DD4AF8212F30450065FF24 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				E1DD4AF9212F31D20065FF24 /* ListViewModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E1DD4B4D21300E2A0065FF24 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD4B4E21300E410065FF24 /* ChangeRequest.swift */,
+				E1DD4B50213016180065FF24 /* ChangeRequestViewModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -601,9 +612,9 @@
 				E16653E8212F22EC00EEA502 /* LaunchScreen.storyboard in Resources */,
 				E1665420212F22EC00EEA502 /* Main.storyboard in Resources */,
 				E16653F3212F22EC00EEA502 /* LoadingView.xib in Resources */,
+				E1DD4B53213033B70065FF24 /* Assets.xcassets in Resources */,
 				E1DD4AF5212F2B840065FF24 /* ItemCell.xib in Resources */,
 				E16653F4212F22EC00EEA502 /* ErrorView.xib in Resources */,
-				E16653E7212F22EC00EEA502 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,11 +638,11 @@
 				E16653FA212F22EC00EEA502 /* Reuseable.swift in Sources */,
 				E16653FE212F22EC00EEA502 /* Presenter.swift in Sources */,
 				E1665411212F22EC00EEA502 /* ListInteractor.swift in Sources */,
-				E16653F1212F22EC00EEA502 /* UsageStatsNetworkService.swift in Sources */,
 				E16653EA212F22EC00EEA502 /* UIView+Initialize.swift in Sources */,
 				E1665410212F22EC00EEA502 /* ListViewController+UIViewControllerPreviewDelegate.swift in Sources */,
 				E166541F212F22EC00EEA502 /* MainNavigationCoordinator.swift in Sources */,
 				E1665401212F22EC00EEA502 /* Task.swift in Sources */,
+				E1DD4B51213016180065FF24 /* ChangeRequestViewModel.swift in Sources */,
 				E16653FF212F22EC00EEA502 /* CanShowStatusView.swift in Sources */,
 				E16653EF212F22EC00EEA502 /* NetworkServiceError.swift in Sources */,
 				E1665405212F22EC00EEA502 /* AppDelegate.swift in Sources */,
@@ -656,12 +667,13 @@
 				E166540A212F22EC00EEA502 /* CollectionViewDataSource.swift in Sources */,
 				E16653F7212F22EC00EEA502 /* ViewControllerFactory.swift in Sources */,
 				E1665421212F22EC00EEA502 /* MainPresenter.swift in Sources */,
+				E1DD4B4C213008140065FF24 /* NetworkService.swift in Sources */,
+				E1DD4B4F21300E410065FF24 /* ChangeRequest.swift in Sources */,
 				E1DD4AFC212F35CA0065FF24 /* ListDataNetworkService.swift in Sources */,
 				E16653F6212F22EC00EEA502 /* ErrorView.swift in Sources */,
 				E1665424212F22EC00EEA502 /* MenuViewModel.swift in Sources */,
 				E166540E212F22EC00EEA502 /* ListViewController+PresenterDelegate.swift in Sources */,
 				E1665402212F22EC00EEA502 /* Strings.swift in Sources */,
-				E1DD4AFA212F31D20065FF24 /* ListViewModel.swift in Sources */,
 				E1DD4AFE212FE8890065FF24 /* NavigationCoordinatorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

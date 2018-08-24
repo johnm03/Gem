@@ -21,6 +21,11 @@ class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
 
         let cell = dequeueReusableCellForTypeAndIndexPath(collectionView)(ItemCell.self, indexPath)
 
+        let viewModel = viewController.presenter.listViewModels[indexPath.row]
+        cell.name.text = viewModel.name
+
+        cell.set(image: viewModel.statusImage)
+        
         return cell
         
     }

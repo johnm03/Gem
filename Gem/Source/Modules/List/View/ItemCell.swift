@@ -19,6 +19,9 @@ class ItemCell: UICollectionViewCell {
     @IBOutlet weak var topShadow: UIView!
     @IBOutlet weak var bottomShadow: UIView!
     
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    
     lazy var shadowColor = ShadowColor()
     
     override func awakeFromNib() {
@@ -57,6 +60,37 @@ class ItemCell: UICollectionViewCell {
         caLayer.frame = frame
         return caLayer
         
+    }
+    
+    func set(image: UIImage?) {
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.imageView.transform = CGAffineTransform(rotationAngle: 0)
+            self.imageView.image = image
+        }) { _ in
+
+        }
+        
+    }
+    
+    func startAnimation() {
+
+        let animate = CABasicAnimation(keyPath: "transform.rotation")
+        animate.duration = 1
+        animate.repeatCount = Float.infinity
+        animate.fromValue = 0.0
+        animate.toValue = Float(Double.pi * 2.0)
+        self.imageView.layer.add(animate, forKey: "kAnimationKey")
+        
+//        UIView.animate(withDuration: 1, delay: 0, options: [.repeat], animations: {
+//            self.imageView.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi * 2))
+//        }) { _ in
+//            
+//        }
+    }
+    
+    func removeAnimations() {
+        self.imageView.layer.removeAllAnimations()
     }
     
     

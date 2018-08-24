@@ -8,11 +8,12 @@ import UIKit
 struct ListNavigationCoordinator: Coordinatable {
     
     let destination: ListViewController
+    let networkRequest: ListNetworkService.Request
     
     func prepareForNavigation() {
         
         let presenter = ListPresenter(viewController: destination,
-                                      interactor: ListInteractor(withRequest: ListNetworkService().fetchFruitData(session: .shared)))
+                                      interactor: ListInteractor(withRequest: ListNetworkService().fetch(withSession: .shared)))
         
         presenter.viewController = destination
         
