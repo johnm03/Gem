@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2Gi-f0-gKS" customClass="ItemCell" customModule="Gem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jy9-qJ-4qA">
+                        <rect key="frame" x="0.0" y="0.0" width="429" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="6af-Tr-wSq"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="612-Yr-di4">
+                        <rect key="frame" x="0.0" y="125" width="429" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="2ZN-0d-REP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="1" blue="0.080762223659999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jy9-qJ-4qA" firstAttribute="top" secondItem="2Gi-f0-gKS" secondAttribute="top" id="F09-Xs-LlP"/>
+                <constraint firstItem="612-Yr-di4" firstAttribute="leading" secondItem="2Gi-f0-gKS" secondAttribute="leading" id="MA9-yZ-b1N"/>
+                <constraint firstAttribute="trailing" secondItem="612-Yr-di4" secondAttribute="trailing" id="UyK-dk-U9Q"/>
+                <constraint firstAttribute="bottom" secondItem="612-Yr-di4" secondAttribute="bottom" id="WPg-7m-f13"/>
+                <constraint firstAttribute="trailing" secondItem="jy9-qJ-4qA" secondAttribute="trailing" id="gG6-Mi-2rt"/>
+                <constraint firstItem="jy9-qJ-4qA" firstAttribute="leading" secondItem="2Gi-f0-gKS" secondAttribute="leading" id="iGN-2C-nQ0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="DcL-VD-Lm1"/>
+            <size key="customSize" width="429" height="130"/>
+            <connections>
+                <outlet property="bottomShadow" destination="612-Yr-di4" id="Ei7-yZ-2lM"/>
+                <outlet property="topShadow" destination="jy9-qJ-4qA" id="9d2-ix-ihn"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="7"/>
+        </collectionViewCell>
+    </objects>
+</document>
