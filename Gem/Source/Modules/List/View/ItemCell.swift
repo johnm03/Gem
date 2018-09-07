@@ -16,13 +16,16 @@ struct ShadowColor {
 
 class ItemCell: UICollectionViewCell {
     
-    @IBOutlet weak var topShadow: UIView!
-    @IBOutlet weak var bottomShadow: UIView!
+    @IBOutlet private weak var topShadow: UIView!
+    @IBOutlet private weak var bottomShadow: UIView!
     
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var stautsView: UIView!
     
-    lazy var shadowColor = ShadowColor()
+    @IBOutlet private weak var name: UILabel!
+    
+    private lazy var shadowColor = ShadowColor()
+    
+    private var stautsViewFlashing: Bool = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,7 +37,7 @@ class ItemCell: UICollectionViewCell {
 
     }
     
-    func topShadowLayer(forFrame frame: CGRect) -> CALayer {
+    private func topShadowLayer(forFrame frame: CGRect) -> CALayer {
         
         let caLayer = CAGradientLayer()
 
@@ -48,7 +51,7 @@ class ItemCell: UICollectionViewCell {
         
     }
     
-    func bottomShadowLayer(forFrame frame: CGRect) -> CALayer {
+    private func bottomShadowLayer(forFrame frame: CGRect) -> CALayer {
         
         let caLayer = CAGradientLayer()
 
@@ -62,35 +65,37 @@ class ItemCell: UICollectionViewCell {
         
     }
     
-    func set(image: UIImage?) {
+    func setLabelColor(_ color: UIColor) {
+        
+        removeAnimations()
         
         UIView.animate(withDuration: 0.3, animations: {
-            self.imageView.transform = CGAffineTransform(rotationAngle: 0)
-            self.imageView.image = image
+            self.stautsView.alpha = 1
+            self.stautsView.backgroundColor = color
         }) { _ in
 
         }
         
     }
     
+    func set(name: String) {
+        self.name.text = name
+    }
+    
     func startAnimation() {
-
-        let animate = CABasicAnimation(keyPath: "transform.rotation")
-        animate.duration = 1
-        animate.repeatCount = Float.infinity
-        animate.fromValue = 0.0
-        animate.toValue = Float(Double.pi * 2.0)
-        self.imageView.layer.add(animate, forKey: "kAnimationKey")
         
-//        UIView.animate(withDuration: 1, delay: 0, options: [.repeat], animations: {
-//            self.imageView.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi * 2))
-//        }) { _ in
-//            
-//        }
+        let animate = CABasicAnimation(keyPath: "opacity")
+        animate.duration = 2
+        animate.repeatCount = Float.infinity
+        animate.autoreverses = true
+        animate.fromValue = 0.1
+        animate.toValue = 1
+        self.stautsView.layer.add(animate, forKey: "kAnimationKey")
+        
     }
     
     func removeAnimations() {
-        self.imageView.layer.removeAllAnimations()
+        self.stautsView.layer.removeAllAnimations()
     }
     
     

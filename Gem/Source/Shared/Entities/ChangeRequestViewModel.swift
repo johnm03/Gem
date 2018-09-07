@@ -17,18 +17,19 @@ struct ChangeRequestViewModel {
         case aborted
         case unknown
         
-        func statusImage() -> UIImage? {
+        func statusColor() -> UIColor {
             switch self {
             case .running:
-                return UIImage(named: "icons-loading")
+                return .orange
             case .failed:
-                return UIImage(named: "icons-cancel")
+                return .red
             case .aborted:
-                return UIImage(named: "icons-aborted")
+                return .gray
             case .passed:
-                return UIImage(named: "icons-ok")
+                return .green
             case .unknown:
-                return UIImage(named: "icons-unknown")
+                return .black
+                
             }
         }
     }
@@ -37,8 +38,8 @@ struct ChangeRequestViewModel {
         let name: String
         let status: JobStatus
         
-        var statusImage: UIImage? {
-            return status.statusImage()
+        var statusColor: UIColor {
+            return status.statusColor()
         }
         
         var isJobRunning: Bool {

@@ -1,6 +1,6 @@
 //
 //  CanInteractWithPresenter.swift
-//  FruitViewer
+//  Gem
 
 import Foundation
 

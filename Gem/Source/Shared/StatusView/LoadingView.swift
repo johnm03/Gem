@@ -1,6 +1,6 @@
 //
 //  LoadingView.swift
-//  FruitViewer
+//  Gem
 
 import UIKit
 

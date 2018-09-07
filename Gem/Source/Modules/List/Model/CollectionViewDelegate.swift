@@ -1,6 +1,6 @@
 //
 //  CollectionViewDelegate.swift
-//  FruitViewer
+//  Gem
 
 import UIKit
 

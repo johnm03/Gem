@@ -12,7 +12,8 @@ class ListNetworkService: NetworkService {
     
     typealias ResultType = ChangeRequest
     
-    var URLPath = "http://mobile-ci.cloud.pod.bbc:8080/job/iPlayer/job/iOS/job/Pipeline/job/Branches-PRs/view/change-requests/api/json"
+    static let RESTAPISuffix = "api/json"
+    var URLPath = "http://mobile-ci.cloud.pod.bbc:8080/job/iPlayer/job/iOS/job/Pipeline/job/Branches-PRs/view/change-requests/\(RESTAPISuffix)"
     
     /// Network Error
     enum ListNetworkingError: Error {
@@ -23,39 +24,80 @@ class ListNetworkService: NetworkService {
         /// Failed to Parse Fruit API Response.
         case unableToParseData
         
+        case failedToSendRequest
+        
     }
     
     func fetch(withSession session: URLSession) -> Request {
+        
         return { completion in
+
+            let task = Waterfall(with: self.URLPath, completionBlock: completion)
+    
+            task.add(jobs: [
+                self.makeGetRequestTask(),
+                self.performNetworkRequestTask(usingSession: session),
+                self.parseResponseTask(),
+            ])
             
-            guard let listAPIURL = URL(string: self.URLPath) else {
-                throw NetworkServiceError.couldNotBuildURL(URLPath: self.URLPath)
-            }
+            return task
             
-            return session.dataTask(with: listAPIURL) { [weak self] data, response, error in
-                
-                guard let weakSelf = self,
-                    let jsonData = data else {
-                    completion(.failure(ListNetworkingError.noData))
-                    return
-                }
-                
-                guard let result = try? weakSelf.parseRespose(data: jsonData) else {
-                    completion(.failure(ListNetworkingError.unableToParseData))
-                    return
-                }
-                
-                completion(.success(result))
-                
-            }
         }
     }
     
-    func parseRespose(data: Data) throws -> ResultType {
+    
+    private func parseResponseTask() -> Tasker.JobType {
+        return Job.throwableTask { result in
+            
+            guard let requestResponseData = result.userInfo as? Data else {
+                throw ListNetworkingError.failedToSendRequest
+            }
+            
+            return try JSONDecoder().decode(ChangeRequest.self, from: requestResponseData)
+            
+        }
+    }
+    
+    private func makeGetRequestTask() -> Tasker.JobType {
         
-        let changeRequest = try JSONDecoder().decode(ChangeRequest.self, from: data)
+        return Job.throwableTask { result in
+            
+            guard let urlPath = result.userInfo as? String,
+                let url = URL(string: urlPath) else {
+                throw NetworkServiceError.couldNotBuildURL(URLPath: "")
+            }
+            
+            let request = URLRequest(url: url,
+                                     cachePolicy: .useProtocolCachePolicy,
+                                     timeoutInterval: 60)
+            
+            return request
+            
+        }
+    }
+    
+    private func performNetworkRequestTask(usingSession session: URLSession = .shared) -> Tasker.JobType {
         
-        return changeRequest
+        return { result in
+            
+            guard let urlRequest = result.userInfo as? URLRequest else {
+                throw ListNetworkingError.failedToSendRequest
+            }
+            
+            return session.dataTask(with: urlRequest) { data, response, error in
+                
+                switch (data, response, error) {
+                case (.some(let responseData), _, _):
+                    result.continueWithResults(.success(responseData))
+                case (_, _, .some(let requestError)):
+                    result.continueWithResults(.failure(requestError))
+                default:
+                    result.continueWithResults(.failure(ListNetworkingError.noData))
+                }
+                
+            }
+            
+        }
         
     }
 }

@@ -1,6 +1,6 @@
 //
 //  UICollectionReusableView+ReuseIdentifier.swift
-//  FruitViewer
+//  Gem
 
 import UIKit
 

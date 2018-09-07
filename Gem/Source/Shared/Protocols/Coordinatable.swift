@@ -1,6 +1,6 @@
 //
 //  Coordinatable.swift
-//  FruitViewer
+//  Gem
 
 /// Errors produced from coordinating
 enum CoordinateError: Error {

@@ -1,10 +1,9 @@
 //
 //  CollectionViewDataSource.swift
-//  FruitViewer
+//  Gem
 
 import UIKit
 
-/// Fruit List Collection View Data Source
 class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
     @IBOutlet weak var viewController: ListViewController!
@@ -22,10 +21,11 @@ class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
         let cell = dequeueReusableCellForTypeAndIndexPath(collectionView)(ItemCell.self, indexPath)
 
         let viewModel = viewController.presenter.listViewModels[indexPath.row]
-        cell.name.text = viewModel.name
-
-        cell.set(image: viewModel.statusImage)
         
+        cell.set(name: viewModel.name)
+
+        cell.setLabelColor(viewModel.statusColor)
+                
         return cell
         
     }

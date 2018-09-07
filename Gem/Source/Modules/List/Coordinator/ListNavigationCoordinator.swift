@@ -1,6 +1,6 @@
 //
 //  ListNavigationCoordinator.swift
-//  FruitViewer
+//  Gem
 
 import UIKit
 

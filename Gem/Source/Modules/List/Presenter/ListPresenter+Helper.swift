@@ -1,6 +1,6 @@
 //
 //  ListPresenter+Helper.swift
-//  FruitViewer
+//  Gem
 
 import UIKit
 
@@ -57,6 +57,8 @@ extension ListPresenter {
             return Strings.noDataFromAPI
         case .unableToParseData:
             return Strings.badResponseFromAPI
+        case .failedToSendRequest:
+            return Strings.unexpectedError
         }
     }
     

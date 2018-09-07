@@ -1,6 +1,6 @@
 //
 //  HTTPURLResponse+ResponseType.swift
-//  FruitViewer
+//  Gem
 
 import Foundation
 

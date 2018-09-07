@@ -1,6 +1,6 @@
 //
 //  CanShowStatusView.swift
-//  FruitViewer
+//  Gem
 
 import UIKit
 

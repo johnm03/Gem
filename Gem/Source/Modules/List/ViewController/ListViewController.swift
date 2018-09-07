@@ -1,6 +1,6 @@
 //
 //  ListViewController.swift
-//  FruitViewer
+//  Gem
 
 import UIKit
 
@@ -32,7 +32,8 @@ class ListViewController: UIViewController, CanInteractWithPresenter, CanShowSta
         collectionView.register(nib: ItemCell.self)
         
         presenter.loadIfRequired()
-
+        
+        collectionView.backgroundColor = .white
     }
     
     /// Responsible for reloading current Fruit List.

@@ -1,6 +1,6 @@
 //
 //  Functions.swift
-//  FruitViewer
+//  Gem
 
 import Foundation
 

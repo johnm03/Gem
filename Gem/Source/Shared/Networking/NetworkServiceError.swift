@@ -1,6 +1,6 @@
 //
 //  NetworkServiceError.swift
-//  FruitViewer
+//  Gem
 
 import Foundation
 

@@ -1,6 +1,6 @@
 //
 //  UICollectionView+Register.swift
-//  FruitViewer
+//  Gem
 
 import UIKit
 

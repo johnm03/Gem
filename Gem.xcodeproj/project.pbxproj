@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E11AED1E21427C8F00E49897 /* BlockTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED1621427C8F00E49897 /* BlockTask.swift */; };
+		E11AED1F21427C8F00E49897 /* CanPerformJobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED1821427C8F00E49897 /* CanPerformJobs.swift */; };
+		E11AED2021427C8F00E49897 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED1921427C8F00E49897 /* Task.swift */; };
+		E11AED2121427C8F00E49897 /* TaskResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED1B21427C8F00E49897 /* TaskResult.swift */; };
+		E11AED2221427C8F00E49897 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED1C21427C8F00E49897 /* Result.swift */; };
+		E11AED2321427C8F00E49897 /* Waterfall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED1D21427C8F00E49897 /* Waterfall.swift */; };
 		E166535D212F227800EEA502 /* GemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166535C212F227800EEA502 /* GemTests.swift */; };
 		E16653E8212F22EC00EEA502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1665369212F22EC00EEA502 /* LaunchScreen.storyboard */; };
 		E16653EA212F22EC00EEA502 /* UIView+Initialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665372212F22EC00EEA502 /* UIView+Initialize.swift */; };
@@ -14,7 +20,6 @@
 		E16653EC212F22EC00EEA502 /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665376212F22EC00EEA502 /* UICollectionView+Register.swift */; };
 		E16653ED212F22EC00EEA502 /* UICollectionReusableView+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665378212F22EC00EEA502 /* UICollectionReusableView+ReuseIdentifier.swift */; };
 		E16653EF212F22EC00EEA502 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166537B212F22EC00EEA502 /* NetworkServiceError.swift */; };
-		E16653F0212F22EC00EEA502 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166537C212F22EC00EEA502 /* Result.swift */; };
 		E16653F2212F22EC00EEA502 /* HTTPURLResponse+ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665380212F22EC00EEA502 /* HTTPURLResponse+ResponseType.swift */; };
 		E16653F3212F22EC00EEA502 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1665382212F22EC00EEA502 /* LoadingView.xib */; };
 		E16653F4212F22EC00EEA502 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1665383212F22EC00EEA502 /* ErrorView.xib */; };
@@ -30,7 +35,6 @@
 		E16653FE212F22EC00EEA502 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665391212F22EC00EEA502 /* Presenter.swift */; };
 		E16653FF212F22EC00EEA502 /* CanShowStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665392212F22EC00EEA502 /* CanShowStatusView.swift */; };
 		E1665400212F22EC00EEA502 /* CanInteractWithPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665393212F22EC00EEA502 /* CanInteractWithPresenter.swift */; };
-		E1665401212F22EC00EEA502 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665394212F22EC00EEA502 /* Task.swift */; };
 		E1665402212F22EC00EEA502 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665396212F22EC00EEA502 /* Strings.swift */; };
 		E1665405212F22EC00EEA502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166539A212F22EC00EEA502 /* AppDelegate.swift */; };
 		E1665406212F22EC00EEA502 /* ListNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166539E212F22EC00EEA502 /* ListNavigationCoordinator.swift */; };
@@ -71,6 +75,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E11AED1621427C8F00E49897 /* BlockTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockTask.swift; sourceTree = "<group>"; };
+		E11AED1821427C8F00E49897 /* CanPerformJobs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanPerformJobs.swift; sourceTree = "<group>"; };
+		E11AED1921427C8F00E49897 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		E11AED1B21427C8F00E49897 /* TaskResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskResult.swift; sourceTree = "<group>"; };
+		E11AED1C21427C8F00E49897 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		E11AED1D21427C8F00E49897 /* Waterfall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waterfall.swift; sourceTree = "<group>"; };
 		E1665344212F227700EEA502 /* Gem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1665358212F227800EEA502 /* GemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E166535C212F227800EEA502 /* GemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemTests.swift; sourceTree = "<group>"; };
@@ -81,7 +91,6 @@
 		E1665376212F22EC00EEA502 /* UICollectionView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
 		E1665378212F22EC00EEA502 /* UICollectionReusableView+ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		E166537B212F22EC00EEA502 /* NetworkServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
-		E166537C212F22EC00EEA502 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		E1665380212F22EC00EEA502 /* HTTPURLResponse+ResponseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+ResponseType.swift"; sourceTree = "<group>"; };
 		E1665382212F22EC00EEA502 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		E1665383212F22EC00EEA502 /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
@@ -97,7 +106,6 @@
 		E1665391212F22EC00EEA502 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		E1665392212F22EC00EEA502 /* CanShowStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanShowStatusView.swift; sourceTree = "<group>"; };
 		E1665393212F22EC00EEA502 /* CanInteractWithPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanInteractWithPresenter.swift; sourceTree = "<group>"; };
-		E1665394212F22EC00EEA502 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		E1665396212F22EC00EEA502 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		E166539A212F22EC00EEA502 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E166539E212F22EC00EEA502 /* ListNavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNavigationCoordinator.swift; sourceTree = "<group>"; };
@@ -146,6 +154,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E11AED1421427C6600E49897 /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				E11AED1A21427C8F00E49897 /* Helpers */,
+				E11AED1721427C8F00E49897 /* Protocol */,
+				E11AED1521427C8F00E49897 /* Tasks */,
+				E11AED1D21427C8F00E49897 /* Waterfall.swift */,
+			);
+			path = Waterfall;
+			sourceTree = "<group>";
+		};
+		E11AED1521427C8F00E49897 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				E11AED1621427C8F00E49897 /* BlockTask.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		E11AED1721427C8F00E49897 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E11AED1821427C8F00E49897 /* CanPerformJobs.swift */,
+				E11AED1921427C8F00E49897 /* Task.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E11AED1A21427C8F00E49897 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E11AED1B21427C8F00E49897 /* TaskResult.swift */,
+				E11AED1C21427C8F00E49897 /* Result.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E166533B212F227700EEA502 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +250,7 @@
 		E166536E212F22EC00EEA502 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E11AED1421427C6600E49897 /* Waterfall */,
 				E1DD4B4D21300E2A0065FF24 /* Entities */,
 				E166536F212F22EC00EEA502 /* UsageStats */,
 				E1665370212F22EC00EEA502 /* UIKit */,
@@ -274,7 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				E166537B212F22EC00EEA502 /* NetworkServiceError.swift */,
-				E166537C212F22EC00EEA502 /* Result.swift */,
 				E1DD4AFB212F35CA0065FF24 /* ListDataNetworkService.swift */,
 			);
 			path = Networking;
@@ -342,7 +387,6 @@
 				E1665391212F22EC00EEA502 /* Presenter.swift */,
 				E1665392212F22EC00EEA502 /* CanShowStatusView.swift */,
 				E1665393212F22EC00EEA502 /* CanInteractWithPresenter.swift */,
-				E1665394212F22EC00EEA502 /* Task.swift */,
 				E1DD4B4B213008140065FF24 /* NetworkService.swift */,
 			);
 			path = Protocols;
@@ -636,16 +680,19 @@
 				E1665423212F22EC00EEA502 /* MainTabBarController.swift in Sources */,
 				E166540B212F22EC00EEA502 /* CollectionViewDelegate.swift in Sources */,
 				E16653FA212F22EC00EEA502 /* Reuseable.swift in Sources */,
+				E11AED2021427C8F00E49897 /* Task.swift in Sources */,
 				E16653FE212F22EC00EEA502 /* Presenter.swift in Sources */,
+				E11AED2221427C8F00E49897 /* Result.swift in Sources */,
+				E11AED1F21427C8F00E49897 /* CanPerformJobs.swift in Sources */,
 				E1665411212F22EC00EEA502 /* ListInteractor.swift in Sources */,
 				E16653EA212F22EC00EEA502 /* UIView+Initialize.swift in Sources */,
 				E1665410212F22EC00EEA502 /* ListViewController+UIViewControllerPreviewDelegate.swift in Sources */,
 				E166541F212F22EC00EEA502 /* MainNavigationCoordinator.swift in Sources */,
-				E1665401212F22EC00EEA502 /* Task.swift in Sources */,
 				E1DD4B51213016180065FF24 /* ChangeRequestViewModel.swift in Sources */,
 				E16653FF212F22EC00EEA502 /* CanShowStatusView.swift in Sources */,
 				E16653EF212F22EC00EEA502 /* NetworkServiceError.swift in Sources */,
 				E1665405212F22EC00EEA502 /* AppDelegate.swift in Sources */,
+				E11AED2321427C8F00E49897 /* Waterfall.swift in Sources */,
 				E16653F5212F22EC00EEA502 /* LoadingView.swift in Sources */,
 				E1665425212F22EC00EEA502 /* Menu.swift in Sources */,
 				E16653F2212F22EC00EEA502 /* HTTPURLResponse+ResponseType.swift in Sources */,
@@ -660,7 +707,7 @@
 				E16653FB212F22EC00EEA502 /* SupportDisaplyUsageStatsUpdate.swift in Sources */,
 				E16653EC212F22EC00EEA502 /* UICollectionView+Register.swift in Sources */,
 				E16653FD212F22EC00EEA502 /* Interactor.swift in Sources */,
-				E16653F0212F22EC00EEA502 /* Result.swift in Sources */,
+				E11AED1E21427C8F00E49897 /* BlockTask.swift in Sources */,
 				E16653ED212F22EC00EEA502 /* UICollectionReusableView+ReuseIdentifier.swift in Sources */,
 				E1DD4AF7212F2B910065FF24 /* ItemCell.swift in Sources */,
 				E1665409212F22EC00EEA502 /* ListPresenter+Helper.swift in Sources */,
@@ -673,6 +720,7 @@
 				E16653F6212F22EC00EEA502 /* ErrorView.swift in Sources */,
 				E1665424212F22EC00EEA502 /* MenuViewModel.swift in Sources */,
 				E166540E212F22EC00EEA502 /* ListViewController+PresenterDelegate.swift in Sources */,
+				E11AED2121427C8F00E49897 /* TaskResult.swift in Sources */,
 				E1665402212F22EC00EEA502 /* Strings.swift in Sources */,
 				E1DD4AFE212FE8890065FF24 /* NavigationCoordinatorFactory.swift in Sources */,
 			);

@@ -1,6 +1,6 @@
 //
 //  UIStoryboard+Instantiate.swift
-//  FruitViewer
+//  Gem
 
 import UIKit
 

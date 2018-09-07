@@ -1,6 +1,6 @@
 //
 //  CanHandleDisaplyUsageStats.swift
-//  FruitViewer
+//  Gem
 
 import Foundation
 
