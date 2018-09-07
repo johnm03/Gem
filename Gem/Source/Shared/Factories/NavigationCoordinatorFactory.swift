@@ -15,6 +15,9 @@ struct NavigationCoordinatorFactory {
         case (.prs, let listViewController as ListViewController):
             return ListNavigationCoordinator(destination: listViewController,
                                              networkRequest: ListNetworkService().fetch(withSession: .shared))
+        case (.master, let listViewController as ListViewController):
+            return ListNavigationCoordinator(destination: listViewController,
+                                             networkRequest: ListNetworkService().fetch(withSession: .shared))
         default:
             return nil
         }

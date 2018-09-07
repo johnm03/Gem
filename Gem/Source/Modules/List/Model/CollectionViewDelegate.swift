@@ -51,6 +51,14 @@ class CollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollectionVi
         return CGSize(width: maxItemWidth, height: maxItemHeight)
         
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        
+        guard viewController.presenter.listViewModels.count > 0 else {
+            return .zero
+        }
+
+        return CGSize(width: collectionView.frame.width, height: 100)
+    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
@@ -67,15 +75,7 @@ class CollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
-        let itemCell = cell as? ItemCell
-        
-        let viewModel = viewController.presenter.listViewModels[indexPath.row]
-
-        if viewModel.isJobRunning {
-            itemCell?.startAnimation()
-        }
-        
+        viewController.presenter.listViewModels[indexPath.row].prepareCell(cell)
     }
     
 }

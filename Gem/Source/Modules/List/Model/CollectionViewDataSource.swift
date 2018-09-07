@@ -18,19 +18,21 @@ class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cell = dequeueReusableCellForTypeAndIndexPath(collectionView)(ItemCell.self, indexPath)
-
         let viewModel = viewController.presenter.listViewModels[indexPath.row]
         
-        cell.set(name: viewModel.name)
-
-        cell.setLabelColor(viewModel.statusColor)
-                
-        return cell
+        return viewModel.configureCell(inCollectionView: collectionView, forIndexPath: indexPath)
         
     }
     
     // Test Injection
-    var dequeueReusableCellForTypeAndIndexPath: ((UICollectionView) -> (ItemCell.Type, IndexPath) -> ItemCell) = UICollectionView.dequeueReusableCell
+    var dequeueReusableCellForTypeAndIndexPath: ((UICollectionView) -> (ItemCollectionViewCell.Type, IndexPath) -> ItemCollectionViewCell) = UICollectionView.dequeueReusableCell
 
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let viewModel = viewController.presenter.listViewModels[indexPath.row]
+        return viewModel.configureCollectionReuableView(collectionView,
+                                                        viewForSupplementaryElementOfKind: kind,
+                                                        at: indexPath)
+    }
+    
+    
 }

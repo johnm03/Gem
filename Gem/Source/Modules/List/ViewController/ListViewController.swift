@@ -25,11 +25,14 @@ class ListViewController: UIViewController, CanInteractWithPresenter, CanShowSta
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupRefreshController(forCollectionView: collectionView)
+//        setupRefreshController(forCollectionView: collectionView)
         
         statusContainerView = collectionViewContainerView
         
-        collectionView.register(nib: ItemCell.self)
+        collectionView.register(nib: ItemCollectionViewCell.self)
+        collectionView.register(nib: ItemCollectionReusableView.self, ofKind: UICollectionElementKindSectionHeader, bundle: .main)
+        let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
+        layout?.headerReferenceSize = CGSize(width: collectionView.frame.width, height: 100)
         
         presenter.loadIfRequired()
         

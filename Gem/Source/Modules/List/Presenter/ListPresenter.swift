@@ -18,7 +18,7 @@ class ListPresenter: Presenter {
         self.interactor = interactor
     }
     
-    var listViewModels: [ChangeRequestViewModel.JobViewModel] = []
+    var listViewModels: [CanConfigureCollectionViewCell & CanPrepareCollectionViewCell & CanConfigureCollectionReusableView] = []
 
     /// Call this method to load any required data.
     func loadIfRequired() {
@@ -50,7 +50,7 @@ class ListPresenter: Presenter {
                         status = .unknown
                     }
                     
-                    return ChangeRequestViewModel.JobViewModel(name: job.name, status: status)
+                    return ChangeRequestViewModel(job: ChangeRequestViewModel.JobViewModel(name: job.name, status: status))
                 }
                 strongSelf.presenterDidUpdateContent(strongSelf.viewController)
             case .failure(let error):

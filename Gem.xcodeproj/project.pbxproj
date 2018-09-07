@@ -13,6 +13,14 @@
 		E11AED2121427C8F00E49897 /* TaskResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED1B21427C8F00E49897 /* TaskResult.swift */; };
 		E11AED2221427C8F00E49897 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED1C21427C8F00E49897 /* Result.swift */; };
 		E11AED2321427C8F00E49897 /* Waterfall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED1D21427C8F00E49897 /* Waterfall.swift */; };
+		E11AED7121428E5B00E49897 /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED7021428E5B00E49897 /* Master.swift */; };
+		E11AED732142907D00E49897 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED722142907D00E49897 /* ListViewModel.swift */; };
+		E11AED75214290FF00E49897 /* CanConfigureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED74214290FF00E49897 /* CanConfigureCollectionViewCell.swift */; };
+		E11AED7A2142A4D800E49897 /* ItemCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED792142A4D800E49897 /* ItemCollectionReusableView.swift */; };
+		E11AED7C2142A4E900E49897 /* ItemCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11AED7B2142A4E900E49897 /* ItemCollectionReusableView.xib */; };
+		E11AED7E2142A5DE00E49897 /* CanConfigureCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED7D2142A5DE00E49897 /* CanConfigureCollectionReusableView.swift */; };
+		E11AED802142A61400E49897 /* CanPrepareCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED7F2142A61400E49897 /* CanPrepareCollectionViewCell.swift */; };
+		E11AED832142AB3C00E49897 /* StreachyHeaderViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11AED822142AB3C00E49897 /* StreachyHeaderViewLayout.swift */; };
 		E166535D212F227800EEA502 /* GemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166535C212F227800EEA502 /* GemTests.swift */; };
 		E16653E8212F22EC00EEA502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1665369212F22EC00EEA502 /* LaunchScreen.storyboard */; };
 		E16653EA212F22EC00EEA502 /* UIView+Initialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1665372212F22EC00EEA502 /* UIView+Initialize.swift */; };
@@ -54,8 +62,8 @@
 		E1665423212F22EC00EEA502 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16653D5212F22EC00EEA502 /* MainTabBarController.swift */; };
 		E1665424212F22EC00EEA502 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16653D7212F22EC00EEA502 /* MenuViewModel.swift */; };
 		E1665425212F22EC00EEA502 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16653D8212F22EC00EEA502 /* Menu.swift */; };
-		E1DD4AF5212F2B840065FF24 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DD4AF4212F2B840065FF24 /* ItemCell.xib */; };
-		E1DD4AF7212F2B910065FF24 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AF6212F2B910065FF24 /* ItemCell.swift */; };
+		E1DD4AF5212F2B840065FF24 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DD4AF4212F2B840065FF24 /* ItemCollectionViewCell.xib */; };
+		E1DD4AF7212F2B910065FF24 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AF6212F2B910065FF24 /* ItemCollectionViewCell.swift */; };
 		E1DD4AFC212F35CA0065FF24 /* ListDataNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AFB212F35CA0065FF24 /* ListDataNetworkService.swift */; };
 		E1DD4AFE212FE8890065FF24 /* NavigationCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4AFD212FE8890065FF24 /* NavigationCoordinatorFactory.swift */; };
 		E1DD4B4C213008140065FF24 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD4B4B213008140065FF24 /* NetworkService.swift */; };
@@ -81,6 +89,14 @@
 		E11AED1B21427C8F00E49897 /* TaskResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskResult.swift; sourceTree = "<group>"; };
 		E11AED1C21427C8F00E49897 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		E11AED1D21427C8F00E49897 /* Waterfall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waterfall.swift; sourceTree = "<group>"; };
+		E11AED7021428E5B00E49897 /* Master.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
+		E11AED722142907D00E49897 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		E11AED74214290FF00E49897 /* CanConfigureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanConfigureCollectionViewCell.swift; sourceTree = "<group>"; };
+		E11AED792142A4D800E49897 /* ItemCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionReusableView.swift; sourceTree = "<group>"; };
+		E11AED7B2142A4E900E49897 /* ItemCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionReusableView.xib; sourceTree = "<group>"; };
+		E11AED7D2142A5DE00E49897 /* CanConfigureCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanConfigureCollectionReusableView.swift; sourceTree = "<group>"; };
+		E11AED7F2142A61400E49897 /* CanPrepareCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanPrepareCollectionViewCell.swift; sourceTree = "<group>"; };
+		E11AED822142AB3C00E49897 /* StreachyHeaderViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreachyHeaderViewLayout.swift; sourceTree = "<group>"; };
 		E1665344212F227700EEA502 /* Gem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1665358212F227800EEA502 /* GemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E166535C212F227800EEA502 /* GemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemTests.swift; sourceTree = "<group>"; };
@@ -126,8 +142,8 @@
 		E16653D7212F22EC00EEA502 /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		E16653D8212F22EC00EEA502 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		E16653E6212F22EC00EEA502 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1DD4AF4212F2B840065FF24 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
-		E1DD4AF6212F2B910065FF24 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		E1DD4AF4212F2B840065FF24 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		E1DD4AF6212F2B910065FF24 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1DD4AFB212F35CA0065FF24 /* ListDataNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataNetworkService.swift; sourceTree = "<group>"; };
 		E1DD4AFD212FE8890065FF24 /* NavigationCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinatorFactory.swift; sourceTree = "<group>"; };
 		E1DD4B4B213008140065FF24 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -189,6 +205,14 @@
 				E11AED1C21427C8F00E49897 /* Result.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E11AED812142AB1900E49897 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				E11AED822142AB3C00E49897 /* StreachyHeaderViewLayout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 		E166533B212F227700EEA502 = {
@@ -379,6 +403,7 @@
 		E166538B212F22EC00EEA502 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E11AED7F2142A61400E49897 /* CanPrepareCollectionViewCell.swift */,
 				E166538C212F22EC00EEA502 /* PresenterDelegate.swift */,
 				E166538D212F22EC00EEA502 /* Reuseable.swift */,
 				E166538E212F22EC00EEA502 /* SupportDisaplyUsageStatsUpdate.swift */,
@@ -388,6 +413,8 @@
 				E1665392212F22EC00EEA502 /* CanShowStatusView.swift */,
 				E1665393212F22EC00EEA502 /* CanInteractWithPresenter.swift */,
 				E1DD4B4B213008140065FF24 /* NetworkService.swift */,
+				E11AED74214290FF00E49897 /* CanConfigureCollectionViewCell.swift */,
+				E11AED7D2142A5DE00E49897 /* CanConfigureCollectionReusableView.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -412,6 +439,7 @@
 		E166539C212F22EC00EEA502 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				E11AED812142AB1900E49897 /* Layouts */,
 				E1DD4AF8212F30450065FF24 /* Entities */,
 				E166539D212F22EC00EEA502 /* Coordinator */,
 				E166539F212F22EC00EEA502 /* Storyboard */,
@@ -461,8 +489,10 @@
 		E16653A7212F22EC00EEA502 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E1DD4AF4212F2B840065FF24 /* ItemCell.xib */,
-				E1DD4AF6212F2B910065FF24 /* ItemCell.swift */,
+				E1DD4AF4212F2B840065FF24 /* ItemCollectionViewCell.xib */,
+				E1DD4AF6212F2B910065FF24 /* ItemCollectionViewCell.swift */,
+				E11AED792142A4D800E49897 /* ItemCollectionReusableView.swift */,
+				E11AED7B2142A4E900E49897 /* ItemCollectionReusableView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -567,6 +597,8 @@
 			children = (
 				E1DD4B4E21300E410065FF24 /* ChangeRequest.swift */,
 				E1DD4B50213016180065FF24 /* ChangeRequestViewModel.swift */,
+				E11AED7021428E5B00E49897 /* Master.swift */,
+				E11AED722142907D00E49897 /* ListViewModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -652,12 +684,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11AED7C2142A4E900E49897 /* ItemCollectionReusableView.xib in Resources */,
 				E1665407212F22EC00EEA502 /* List.storyboard in Resources */,
 				E16653E8212F22EC00EEA502 /* LaunchScreen.storyboard in Resources */,
 				E1665420212F22EC00EEA502 /* Main.storyboard in Resources */,
 				E16653F3212F22EC00EEA502 /* LoadingView.xib in Resources */,
 				E1DD4B53213033B70065FF24 /* Assets.xcassets in Resources */,
-				E1DD4AF5212F2B840065FF24 /* ItemCell.xib in Resources */,
+				E1DD4AF5212F2B840065FF24 /* ItemCollectionViewCell.xib in Resources */,
 				E16653F4212F22EC00EEA502 /* ErrorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,17 +712,22 @@
 				E1665408212F22EC00EEA502 /* ListPresenter.swift in Sources */,
 				E1665423212F22EC00EEA502 /* MainTabBarController.swift in Sources */,
 				E166540B212F22EC00EEA502 /* CollectionViewDelegate.swift in Sources */,
+				E11AED7121428E5B00E49897 /* Master.swift in Sources */,
 				E16653FA212F22EC00EEA502 /* Reuseable.swift in Sources */,
 				E11AED2021427C8F00E49897 /* Task.swift in Sources */,
 				E16653FE212F22EC00EEA502 /* Presenter.swift in Sources */,
 				E11AED2221427C8F00E49897 /* Result.swift in Sources */,
 				E11AED1F21427C8F00E49897 /* CanPerformJobs.swift in Sources */,
 				E1665411212F22EC00EEA502 /* ListInteractor.swift in Sources */,
+				E11AED7E2142A5DE00E49897 /* CanConfigureCollectionReusableView.swift in Sources */,
 				E16653EA212F22EC00EEA502 /* UIView+Initialize.swift in Sources */,
+				E11AED75214290FF00E49897 /* CanConfigureCollectionViewCell.swift in Sources */,
 				E1665410212F22EC00EEA502 /* ListViewController+UIViewControllerPreviewDelegate.swift in Sources */,
 				E166541F212F22EC00EEA502 /* MainNavigationCoordinator.swift in Sources */,
 				E1DD4B51213016180065FF24 /* ChangeRequestViewModel.swift in Sources */,
+				E11AED832142AB3C00E49897 /* StreachyHeaderViewLayout.swift in Sources */,
 				E16653FF212F22EC00EEA502 /* CanShowStatusView.swift in Sources */,
+				E11AED7A2142A4D800E49897 /* ItemCollectionReusableView.swift in Sources */,
 				E16653EF212F22EC00EEA502 /* NetworkServiceError.swift in Sources */,
 				E1665405212F22EC00EEA502 /* AppDelegate.swift in Sources */,
 				E11AED2321427C8F00E49897 /* Waterfall.swift in Sources */,
@@ -709,9 +747,11 @@
 				E16653FD212F22EC00EEA502 /* Interactor.swift in Sources */,
 				E11AED1E21427C8F00E49897 /* BlockTask.swift in Sources */,
 				E16653ED212F22EC00EEA502 /* UICollectionReusableView+ReuseIdentifier.swift in Sources */,
-				E1DD4AF7212F2B910065FF24 /* ItemCell.swift in Sources */,
+				E1DD4AF7212F2B910065FF24 /* ItemCollectionViewCell.swift in Sources */,
+				E11AED802142A61400E49897 /* CanPrepareCollectionViewCell.swift in Sources */,
 				E1665409212F22EC00EEA502 /* ListPresenter+Helper.swift in Sources */,
 				E166540A212F22EC00EEA502 /* CollectionViewDataSource.swift in Sources */,
+				E11AED732142907D00E49897 /* ListViewModel.swift in Sources */,
 				E16653F7212F22EC00EEA502 /* ViewControllerFactory.swift in Sources */,
 				E1665421212F22EC00EEA502 /* MainPresenter.swift in Sources */,
 				E1DD4B4C213008140065FF24 /* NetworkService.swift in Sources */,

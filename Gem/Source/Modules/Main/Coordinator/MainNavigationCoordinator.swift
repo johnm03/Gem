@@ -10,8 +10,7 @@ struct MainNavigationCoordinator: Coordinatable {
     
     func prepareForNavigation() {
         
-        let menuItems = [Menu(type: .prs, title: "PRs")]
-        
+        let menuItems = [Menu(type: .master, title: "Master"), Menu(type: .prs, title: "PRs")]
         
         let presenter = MainPresenter(withMenuItems: MenuViewModelFactory().makeMenuViewModels(fromMenu: menuItems))
         

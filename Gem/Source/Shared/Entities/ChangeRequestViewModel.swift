@@ -47,6 +47,50 @@ struct ChangeRequestViewModel {
         }
     }
     
-    let jobs: JobViewModel
+    let job: JobViewModel
         
+}
+
+extension ChangeRequestViewModel: CanConfigureCollectionViewCell {
+    
+    func configureCell(inCollectionView collectionView: UICollectionView, forIndexPath indexPath: IndexPath) -> UICollectionViewCell {
+
+        let cell = collectionView.dequeueReusableCell(type: ItemCollectionViewCell.self, forIndexPath: indexPath)
+
+        cell.set(name: job.name)
+        
+        cell.setLabelColor(job.statusColor)
+        
+        return cell
+        
+    }
+}
+
+extension ChangeRequestViewModel: CanPrepareCollectionViewCell {
+    
+    func prepareCell(_ cell: UICollectionViewCell) {
+        
+        guard let itemCell = cell as? ItemCollectionViewCell else {
+            return
+        }
+        
+        if job.isJobRunning {
+           itemCell.startAnimation()
+        }
+        
+    }
+}
+
+extension ChangeRequestViewModel: CanConfigureCollectionReusableView {
+    
+    func configureCollectionReuableView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        if (kind == UICollectionElementKindSectionHeader) {
+            
+            let reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, type: ItemCollectionReusableView.self, forIndexPath: indexPath)
+            return reusableView
+        }
+        
+        return UICollectionReusableView()
+    }
 }

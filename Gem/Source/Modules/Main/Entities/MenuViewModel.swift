@@ -20,6 +20,8 @@ struct MenuViewModel {
         switch menuType {
         case .prs:
             menuTypeIcon = #imageLiteral(resourceName: "icons-home")
+        case .master:
+            menuTypeIcon = #imageLiteral(resourceName: "icons-crown")
         }
         
         return menuTypeIcon

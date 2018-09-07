@@ -14,6 +14,8 @@ struct ViewControllerFactory {
         switch type {
         case .prs:
             return UIStoryboard.instantiateViewControllerFromStoryboard(withName: ListViewController.Storyboard.name)
+        case .master:
+            return UIStoryboard.instantiateViewControllerFromStoryboard(withName: ListViewController.Storyboard.name)
         }
     }
     

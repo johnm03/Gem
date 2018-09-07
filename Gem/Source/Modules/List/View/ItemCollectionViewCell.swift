@@ -1,5 +1,5 @@
 //
-//  ItemCell.swift
+//  ItemCollectionViewCell.swift
 //  Gem
 //
 //  Created by Melvin John on 23/08/2018.
@@ -14,7 +14,7 @@ struct ShadowColor {
     let light = UIColor(white: 0, alpha: 0).cgColor
 }
 
-class ItemCell: UICollectionViewCell {
+class ItemCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet private weak var topShadow: UIView!
     @IBOutlet private weak var bottomShadow: UIView!

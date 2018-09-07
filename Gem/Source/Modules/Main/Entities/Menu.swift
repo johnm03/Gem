@@ -12,6 +12,7 @@ struct Menu {
     
     enum ItemType {
         case prs
+        case master
     }
     
     let type: ItemType
